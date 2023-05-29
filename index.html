@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./imgs/Logo.png" class="img" alt="logo">
+            <h1 class="titulo">Desafio de encriptacion </h1>
+        </div>
+    </header>
+    
+    <div class="contenedor">        
+        <div class="mobile-principal">
+            <div class="entrada">
+                <textarea id="ingreso" class="ingreso" type="text" cols="40" rows="16" onkeydown="validarTecla(event)" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="botones">
+                    <div class="info">
+                        <div class="iso">
+                            <p>!</p>
+                        </div>
+                        <p><span>solo</span> minúsculas y sin acentos.</p>
+                    </div>
+                    <div class="botones-grupo">
+                        <button type="button" id="btn-enc" class="btn" onclick="encriptar()">encriptar</button>
+                        <button type="button" id="btn-des" class="btn" onclick="desencriptar()">desencriptar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="salida">
+                <img src="./imgs/Muñeco.png" id="muneco" alt="muneco">
+                <h1 id="mensaje"><span>ningún</span> mensaje fue encontrado</h1>
+                <textarea id="texto" cols="80">Ingresa el texto que desees encriptar o desencriptar.</textarea>
+                <button id="copiar" type="button" name="boton" onclick="copiar()">copiar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="contenedor_footer">
+            <div class="derechos">
+                <p class="copyright">&copy Copyright Encriptador Alura - 2023</p>
+            </div>
+            <div class="enlaces_container">
+                <ul class="enlaces">
+                    <li><a href="https://www.linkedin.com/in/jose-sequeira-ba7272191/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/Jose0696" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

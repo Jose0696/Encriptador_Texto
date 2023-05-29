@@ -1,0 +1,332 @@
+html{
+    font-size: 62.5%;
+    background: #F3F5FC;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    margin: auto;
+    width: 1200px;
+    height: 720px;
+    padding: 5px;
+    background: transparent;
+}
+
+.logo{
+    display: flex;
+    column-gap: 2rem;
+    float: left;
+    margin: 2% 0 0 3%;
+    width: 100%;
+
+}
+
+.logo .img{
+    width: 3rem;
+}
+
+.logo .titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    color: #0A3871;
+}
+
+.logo .titulo span{
+    font-weight: lighter;
+    color: #0A3871;
+}
+
+.entrada{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6rem;
+    width: 70%;
+    height: 100%;
+    float: left;
+    border-radius: 24px;
+    background: transparent;
+}
+
+.entrada .ingreso{
+    float: left;
+    font-size: 2rem;
+    margin: 10% 0 0 10%;
+    width: 80%;
+    height: auto;
+    color: #0A3871;
+    border: none;
+    background: transparent;
+    outline: 0;
+}
+
+textarea{
+    resize: none;
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    width: 100%;
+    height: auto;
+    border-radius: 24px;
+    background: transparent;
+}
+
+.botones p{
+    margin: 0 0 0 10%;
+    font-size: 1.4rem;
+}
+
+.botones .botones-grupo{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.botones .botones-grupo .btn{
+    padding: 2rem;
+    font-weight: bold;
+    width: 40%;
+    height: 60%;
+    border-radius: 2.4rem;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.botones .botones-grupo #btn-enc{
+    background: #0A3871;
+    color: #F3F5FC;
+    border: 1px solid #F3F5FC;
+}
+
+.botones .botones-grupo #btn-des{
+    background: #F3F5FC;
+    color:  #0A3871;
+    border: 1px solid #0A3871;
+}
+
+.botones .botones-grupo #btn-enc:hover{
+    background: #F3F5FC;
+    color:  #0A3871;
+    border: 1px solid #0A3871;
+    transition: all .3s;
+}
+
+.botones .botones-grupo #btn-des:hover{
+    background: #0A3871;
+    color: #F3F5FC;
+    border: 1px solid #F3F5FC;
+    transition: all .3s;
+}
+
+.botones .info{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 30%;
+    margin: 0 0 0 10%;
+}
+
+.botones .info p{
+    color: rgb(111, 111, 111);
+}
+
+.botones .info p span{
+    text-transform: capitalize;
+}
+
+.botones .info .iso{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6%;
+    width: 6%;
+    padding: 1.5%;
+    border-radius: 50%;
+    background: rgb(156, 156, 156);
+}
+
+.botones .info .iso p{
+    color: white;
+}
+
+.salida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: auto;
+    float: right;
+    border-radius: 24px;
+    background: white;
+    -webkit-box-shadow: -10px 10px 16px -5px rgba(7,32,97,0.37);
+    -moz-box-shadow: -10px 10px 16px -5px rgba(7,32,97,0.37);
+    box-shadow: -10px 10px 16px -5px rgba(7,32,97,0.37);
+}
+
+.salida #muneco{
+    margin: 20% 0 0 0;
+    width: 90%;
+    height: auto;
+}
+
+.salida #mensaje{
+    margin: 10% 0 2% 0;
+    text-align: center;
+    color: #0A3871;
+}
+
+.salida #mensaje span{
+    text-transform: capitalize;
+}
+
+.salida #texto{
+    float: left;
+    font-size: 1.5rem;
+    margin: 5% 0 4% 0;
+    color: #0A3871;
+    border: none;
+    outline: 0;
+    width: 80%;
+    min-height: 12rem;
+    background: transparent;
+    text-align: center;
+}
+
+.salida #copiar{
+    margin: 0 0 5% 0;
+    padding: 1rem;
+    width: 60%;
+    height: 10%;
+    background: transparent;
+    color:  #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 2.4rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    display: none;
+}
+
+.salida #copiar:hover{
+    background: #F3F5FC;
+    color: #0A3871;
+    border: 1px solid #F3F5FC;
+    transition: all .3s;
+}
+
+@media (max-width: 968px) {
+    .contenedor{
+        width: auto;
+        height: 960px;
+        background: transparent;
+    }
+
+    .mobile-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 8rem;
+        width: 100%;
+    }
+
+    .entrada{
+        row-gap: 4rem;
+        width: 100%;
+    }
+
+    .botones .botones-grupo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 2rem;
+    }
+    
+    .botones .botones-grupo .btn{
+        padding: 2rem;
+        font-weight: bold;
+        width: 80%;
+        height: 60%;
+        border-radius: 2.4rem;
+        text-transform: capitalize;
+        cursor: pointer;
+    }
+
+    .botones .info{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 50%;
+        margin: 0 0 0 10%;
+    }
+
+    .salida{
+        width: 80%;
+        height: auto;
+        margin: 0 0 10% 0;
+    }
+    
+    .salida #muneco{
+        display: none;
+    }
+    
+    .salida #texto{
+        margin: 4% 0 0 0;
+        width: 80%;
+        min-height: 1¿80px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .contenedor_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .derechos {
+    font-size: 14px;
+  }
+  
+  .enlaces_container {
+    font-size: 18px;
+  }
+  
+  .enlaces {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .enlaces li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .enlaces li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .enlaces li a:hover {
+    color: #aaa;
+  }
+  
+  .fa-brands {
+    font-family: "Font Awesome 5 Brands";
+  }
+  
